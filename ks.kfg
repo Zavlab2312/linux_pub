@@ -4,10 +4,10 @@ lang en_US.UTF-8
 keyboard us
 unsupported_hardware
 network --bootproto=dhcp --hostname centos-7.pelmet.loc
-rootpw vagrant
+rootpw Pa$$w0rd
 firewall --disabled
 selinux --permissive
-timezone Europe/Prague
+timezone Europe/Moskow
 unsupported_hardware
 bootloader --location=mbr
 text
@@ -25,7 +25,7 @@ firstboot --disabled
 eula --agreed
 services --enabled=NetworkManager,sshd
 reboot
-user --name=vagrant --plaintext --password vagrant --groups=vagrant,wheel
+user --name=student --plaintext --password Pa$$w0rd --groups=student,wheel
 
 repo --name=base --baseurl=http://mirror.centos.org/centos/7.3.1611/os/x86_64/
 repo --name=epel-release --baseurl=http://anorien.csc.warwick.ac.uk/mirrors/epel/7/x86_64/
